@@ -1,41 +1,10 @@
-import { createContext, useContext } from 'react';
+import { createContext } from 'react';
+import { Chaild } from './components/Chaild';
 
-const ThemeContext = createContext(null);
+export const MyContext = createContext("App.tsx-text");
 
 export function App() {
   return (
-    <ThemeContext value="dark">
-      <Form />
-    </ThemeContext>
+      <Chaild />
   )
-}
-
-function Form() {
-  return (
-    <Panel title="Welcome">
-      <Button>Sign up</Button>
-      <Button>Log in</Button>
-    </Panel>
-  );
-}
-
-function Panel({ title, children }) {
-  const theme = useContext(ThemeContext);
-  const className = 'panel-' + theme;
-  return (
-    <section className={className}>
-      <h1>{title}</h1>
-      {children}
-    </section>
-  )
-}
-
-function Button({ children }) {
-  const theme = useContext(ThemeContext);
-  const className = 'button-' + theme;
-  return (
-    <button className={className}>
-      {children}
-    </button>
-  );
 }
