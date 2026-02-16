@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from 'react';
 import { Child } from './components/context/Child';
+import { ReducerButton } from './components/reducer/ReducerButton';
 
 export const MyContext = createContext<string | undefined>(undefined);
 // <string | undefined>(undefined)-stringのみだとバグに気づけないのでundefinedをあえて許容する
@@ -18,6 +19,7 @@ export function App() {
           <button className='border-3' onClick={() => setNumber(number + 1)}>+1</button>
           <button onClick={() => setNumber(number - 1)}>-1</button>
         <Child />
+        <ReducerButton />
       </div>
     </MyContext.Provider>
   )
