@@ -19,6 +19,7 @@ export function App() {
           <button className='border-3' onClick={() => setNumber(number + 1)}>+1</button>
           <button onClick={() => setNumber(number - 1)}>-1</button>
         <Child />
+        <br />
         <ReducerButton />
       </div>
     </MyContext.Provider>
