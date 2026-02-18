@@ -22,7 +22,9 @@ export function App() {
         <Child />
         <br />
         <ReducerButton />
+        <br />
         <RHF />
+        <br />
       </div>
     </MyContext.Provider>
   )
