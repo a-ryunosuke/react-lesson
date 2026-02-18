@@ -12,23 +12,22 @@ export const RHF = () => {
     >("idle")
 
     const {
-        register,
-        handleSubmit,
-        reset,
+        register, // フォーム登録の関数
+        handleSubmit, // 送信の処理する関数
+        reset, // フォームの状態をリセットする関数
         formState: { errors },
     } = useForm<FormValues>({
-        resolver: zodResolver(zod),
+        resolver: zodResolver(zod), // バリデーション設定(ここではzod)
         defaultValues: {
             name: "",
-            // 他フォーム
-        }
+            // 他フォーム拡張↓
+        } // フォームの初期値
     })
 
     const onSubmit = async(data: FormValues) => {
         setSubmitStates("submitting")
         try {
             setSubmitStates("success")
-            // フォームリセット関数
             reset()
         } catch (error) {
             setSubmitStates("error")
