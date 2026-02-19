@@ -21,6 +21,8 @@ export const RHF = () => {
         defaultValues: {
             name: "",
             // 他フォーム拡張↓
+            mail: "",
+            comment: "",
         } // フォームの初期値
     })
 
@@ -38,6 +40,8 @@ export const RHF = () => {
         <form className="p-8 border-2" onSubmit={handleSubmit(onSubmit)}>
             <div className="p-8 border-2">
                 <Form type="name" register={register} errors={errors} />
+                <Form type="mail" register={register} errors={errors} />
+                <Form type="comment" register={register} errors={errors} />
             </div>
             {/* <div>
                 <label htmlFor="name">name</label>
