@@ -1,4 +1,5 @@
 import { Function } from "./Function"
+import { TypeDefinition } from "./TypeDefinition"
 
 export const TypeScript = () => {
     // アテネーション
@@ -27,10 +28,18 @@ export const TypeScript = () => {
     const x = "ああああ" + 12
     console.log(x) // ああああ12 数値と文字列が結合
 
+    // Object
+    const ob: object ={
+        make: "Food",
+        model: "Mustang",
+        yeer: 2000
+    }
+
     return (
         <div className="p-8 border-2">
             <span>{x}</span>
             <Function />
+            <TypeDefinition />
         </div>
     )
 }
