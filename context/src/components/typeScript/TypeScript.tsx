@@ -37,6 +37,7 @@ export const TypeScript = () => {
 
     return (
         <div className="p-8 border-2">
+            <h1>TypeScript</h1>
             <span>{x}</span>
             <Function />
             <TypeDefinition />
