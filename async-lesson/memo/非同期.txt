@@ -1,0 +1,15 @@
+非同期処理 s流処理が終わるまで待たずに、次に控えている処理を行うこと。javaScriptはシングルスレッドなのでこのような処理が必要。
+
+コールバック関数 関数を別の関数に渡す。例では、関数Bがコールバック関数になる。
+関数A(関数B, 引数)　{
+  実行内容
+}
+
+Promise  非同期処理完了後結果を返すオブジェクト。問題なく完了=resolve、問題がある=reject
+new Promise(function(resolve, reject) {
+  resolve("成功")
+})
+
+new Promise(function(resolve, reject) {
+  reject("失敗")
+})

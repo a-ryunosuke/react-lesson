@@ -1,0 +1,24 @@
+function makeCounter() {
+  let count = 0;
+  return function() {
+    count++;
+    console.log(count);
+  }
+}
+
+const counter1 = makeCounter();
+const counter2 = makeCounter();
+
+counter1(); // ?
+counter1(); // ?
+counter2(); // ?
+counter1(); // ?
+
+1
+2
+1
+3
+
+makeCounterを呼び出すたびに独立したcountが作られる。帰ってくる関数はcountの値を覚えている。
+counter1は、counter1、counter2はcounterの。
+reactStateみたいな奴
