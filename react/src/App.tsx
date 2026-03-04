@@ -36,7 +36,7 @@ export function App() {
         <br />
         <RHF />
         <br />
-        <Map contextArray={contextArray} />
+        <Map />
         <br />
         {/* <Filter contextArray={contextArray} /> */}
       </div>
