@@ -1,6 +1,7 @@
 import './App.css'
 import {PromiseThen} from "./component/PromiseThen"
 import { ReactMemo } from "./component/ReactMemo"
+import { AsyncAwait } from './component/AsyncAwait'
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
     <PromiseThen />
     <br />
     <ReactMemo />
+    <br />
+    <AsyncAwait />
     </>
   )
 }

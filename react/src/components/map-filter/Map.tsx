@@ -25,13 +25,15 @@ import { number } from "zod";
 
 const numbers = [1, 2, 3, 4, 5];
 
-let str = 0
+let str = 0;
 
-for(let i = 0; i < numbers.length; i++) {
-    str += numbers[i]
+// forループで合計
+for (let i = 0; i < numbers.length; i++) {
+    str += numbers[i];
 }
 
-console.log(str)
+console.log(str); // 15
 
-// 期待する出力
-// 15
+// または reduce を使う方法
+// const sum = numbers.reduce((acc, v) => acc + v, 0);
+// console.log(sum); // 15
