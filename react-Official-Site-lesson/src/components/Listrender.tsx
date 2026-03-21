@@ -25,6 +25,7 @@ export const ListRender = () => {
             <li>
                 {people.map((i) => <ul key={i.id}>{i.id}-{i.name}-{i.profession}</ul>)}
             </li>
+            <br />
             <li>
                 {people.filter((i) => i.id > 2).map((i) =>  <ul>{i.id}-{i.name}</ul>)}
             </li>
