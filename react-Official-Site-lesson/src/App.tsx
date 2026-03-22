@@ -1,10 +1,12 @@
 import './App.css'
 import { Click } from './components/Click'
 import { ConditionalRendering } from './components/ConditionalRendering'
-import { ListRender } from './components/Listrender'
+import { ListRender } from './components/ListRender'
 
 import { Object } from './components/Object'
 import { PureFunction } from './components/PureFunction.'
+import { EventHandler } from './interactivity/EventHandler'
+import { Interactivity } from './interactivity/Interactivity'
 
 function App() {
   return (
@@ -20,6 +22,10 @@ function App() {
       <ListRender />
       <br />
       <PureFunction />
+      <br />
+      <Interactivity />
+      <br />
+      <EventHandler />
     </div>
   )
 }
