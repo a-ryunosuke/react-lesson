@@ -7,6 +7,7 @@ import { Object } from './components/Object'
 import { PureFunction } from './components/PureFunction.'
 import { EventHandler } from './interactivity/EventHandler'
 import { Interactivity } from './interactivity/Interactivity'
+import { RenderCommit } from './interactivity/RenderCommit'
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <Interactivity />
       <br />
       <EventHandler />
+      <br />
+      <RenderCommit />
     </div>
   )
 }
